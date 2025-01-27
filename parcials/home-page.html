@@ -15,22 +15,28 @@
   </head>
   <body>
     <!-- Header Section  -->
-    <header>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="/parcials/home-page.html">Home</a></li>
-            <li><a href="/parcials/favourites.html">Favorites</a></li>
+    <header class="header-page">
+      <div class="header-container container">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item header-item-active">
+              <a href="/parcials/home-page.html">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="/parcials/favourites.html">Favorites</a>
+            </li>
           </ul>
         </nav>
-        <a href="./home-page.html"><span>tasty</span>treats.</a>
-        <div>
+        <a class="header-logo" href="./home-page.html"
+          ><span class="logo-part">tasty</span>treats.</a
+        >
+        <div class="header-countainer-basket">
           <svg
+            class="header-logo-basket"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
@@ -57,13 +63,13 @@
             />
           </svg>
         </div>
-        <div>
+        <div class="header-container-logo-burgermenu">
           <svg
+            class="header-logo-burgermenu"
             width="32"
             height="33"
             viewBox="0 0 32 33"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M28 13.8333H4"
@@ -95,181 +101,642 @@
             />
           </svg>
         </div>
+        <div>
+          <div>
+            <div></div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero Section -->
-      <section>
-        <div>
-          <h1>
-            Learn to Cook <span>Tasty Treats'</span> Customizable Masterclass
+      <section class="hero-section">
+        <div class="hero-container container">
+          <h1 class="hero-main-title">
+            Learn to Cook
+            <span class="hero-main-title-part">Tasty Treats'</span> Customizable
+            Masterclass
           </h1>
-          <p>
+          <p class="hero-substring">
             TastyTreats - Customize Your Meal with Ingredient Options and
             Step-by-Step Video Guides.
           </p>
-          <button>Order now</button>
-          <div>
-            <div class="first-shef">
-              <div class="first-shef-img">
-                <img
-                  srcset="/images/cooks/IMG_9893 1.jpg 1x, /images/cooks/IMG_9893 1@2x.jpg 2x"
-                  alt="first shef foto"
-                  src="/images/cooks/IMG_9893 1.jpg"
-                />
-              </div>
-              <div class="first-shef-dish">
-                <img
-                  src="/images/dishes/IMG_9892 1.jpg"
-                  alt="dish foto"
-                  srcset="images/dishes/IMG_9892 1.jpg 1x, images/dishes/IMG_9892 1-@2x.jpg 2x"
-                />
-              </div>
-              <div class="first-shef-zoom-dish">
-                <img
-                  src="/images/dishes/image 1.jpg"
-                  alt="zoomed dish foto"
-                  srcset="/images/dishes/image 1.jpg 1x, /images/dishes/image 1-@2x.jpg 2x"
-                />
-              </div>
+          <button class="hero-order-button">Order now</button>
+          <div class="first-shef-container">
+            <div class="first-shef-img-container">
+              <img
+                class="first-shef-img"
+                srcset="/images/cooks/IMG_9893 1.jpg 1x, /images/cooks/IMG_9893 1@2x.jpg 2x"
+                alt="first shef foto"
+                src="/images/cooks/IMG_9893 1.jpg"
+              />
             </div>
-            <div class="second-shef">
-              <div class="second-shef-img">
-                <img
-                  srcset="/images/cooks/IMG_9893 2.jpg 1x, /images/cooks/IMG_9893 2@2x.jpg 2x"
-                  alt="second shef foto"
-                  src="/images/cooks/IMG_9893 2.jpg"
-                />
-              </div>
-              <div class="second-shef-dish">
-                <img
-                  src="/images/dishes/pizza picture.jpg"
-                  alt="dish foto"
-                  srcset="/images/dishes/pizza picture.jpg 1x, /images/dishes/pizza picture-@2x.jpg 2x"
-                />
-              </div>
-              <div class="second-shef-zoom-dish">
-                <img
-                  src="/images/dishes/pizza picture-zoom.jpg"
-                  alt="zoomed dish foto"
-                  srcset="/images/dishes/pizza picture-zoom.jpg 1x, /images/dishes/pizza picture-zoom-@2x.jpg 2x"
-                />
-              </div>
+            <div class="first-shef-dish-img-container">
+              <img
+                class="first-shef-dish-img"
+                src="/images/dishes/IMG_9892 1.jpg"
+                alt="dish foto"
+                srcset="images/dishes/IMG_9892 1.jpg 1x, images/dishes/IMG_9892 1-@2x.jpg 2x"
+              />
             </div>
-            <div class="third-shef">
-              <div class="third-shef-img">
-                <img
-                  srcset="/images/cooks/IMG_9893 3-1.jpg 1x, /images/cooks/IMG_9893 3.jpg 2x"
-                  alt="third shef foto"
-                  src="/images/cooks/IMG_9893 3-1.jpg"
-                />
-              </div>
-              <div class="third-shef-dish">
-                <img
-                  src="/images/dishes/IMG_9892 2.jpg"
-                  alt="dish foto"
-                  srcset="/images/dishes/IMG_9892 2.jpg 1x, /images/dishes/IMG_9892 2-@2x.jpg 2x"
-                />
-              </div>
-              <div class="third-shef-zoom-dish">
-                <img
-                  src="/images/dishes/IMG_9892 3.jpg"
-                  alt="zoomed dish foto"
-                  srcset="/images/dishes/IMG_9892 3.jpg 1x, /images/dishes/IMG_9892 3-zoom-@2x.jpg 2x"
-                />
-              </div>
+            <div class="first-shef-zoom-dish-container">
+              <img
+                class="first-shef-zoom-dish-img"
+                src="/images/dishes/image 1.jpg"
+                alt="zoomed dish foto"
+                srcset="/images/dishes/image 1.jpg 1x, /images/dishes/image 1-@2x.jpg 2x"
+              />
             </div>
-            <div class="spots-btn-container">
-              <p><span class="first-spot">.</span>..</p>
+          </div>
+          <div class="second-shef-container">
+            <div class="second-shef-img-container">
+              <img
+                class="second-shef-img"
+                srcset="/images/cooks/IMG_9893 2.jpg 1x, /images/cooks/IMG_9893 2@2x.jpg 2x"
+                alt="second shef foto"
+                src="/images/cooks/IMG_9893 2.jpg"
+              />
             </div>
+            <div class="second-shef-dish-container">
+              <img
+                class="second-shef-dish-img"
+                src="/images/dishes/pizza picture.jpg"
+                alt="dish foto"
+                srcset="/images/dishes/pizza picture.jpg 1x, /images/dishes/pizza picture-@2x.jpg 2x"
+              />
+            </div>
+            <div class="second-shef-zoom-dish-container">
+              <img
+                class="second-shef-zoom-dish-img"
+                src="/images/dishes/pizza picture-zoom.jpg"
+                alt="zoomed dish foto"
+                srcset="/images/dishes/pizza picture-zoom.jpg 1x, /images/dishes/pizza picture-zoom-@2x.jpg 2x"
+              />
+            </div>
+          </div>
+          <div class="third-shef">
+            <div class="third-shef-container">
+              <img
+                class="third-shef-img"
+                srcset="/images/cooks/IMG_9893 3-1.jpg 1x, /images/cooks/IMG_9893 3.jpg 2x"
+                alt="third shef foto"
+                src="/images/cooks/IMG_9893 3-1.jpg"
+              />
+            </div>
+            <div class="third-shef-dish-container">
+              <img
+                class="third-shef-dish-img"
+                src="/images/dishes/IMG_9892 2.jpg"
+                alt="dish foto"
+                srcset="/images/dishes/IMG_9892 2.jpg 1x, /images/dishes/IMG_9892 2-@2x.jpg 2x"
+              />
+            </div>
+            <div class="third-shef-zoom-dish-container">
+              <img
+                class="third-shef-dish-zoom-img"
+                src="/images/dishes/IMG_9892 3.jpg"
+                alt="zoomed dish foto"
+                srcset="/images/dishes/IMG_9892 3.jpg 1x, /images/dishes/IMG_9892 3-zoom-@2x.jpg 2x"
+              />
+            </div>
+          </div>
+          <div class="spots-btn-container">
+            <p class="spots-nav">
+              <span class="first-spot-nav">.</span
+              ><span class="second-spot-nav">.</span
+              ><span class="third-spot-nav">.</span>
+            </p>
           </div>
         </div>
       </section>
       <!-- Categories Section -->
-      <section>
-        <div>
-          <button>All categories</button>
-          <div>
-            <ul>
-              <li>Beef</li>
-              <li>Breakfast</li>
-              <li>Chicken</li>
-              <li>Dessert</li>
-              <li>Goat</li>
-              <li>Lamb</li>
+      <section class="categ-section">
+        <div class="categ-container container">
+          <button class="all-categ-button">All categories</button>
+          <div class="categ-list-container">
+            <ul class="categ-list">
+              <li class="categ-item">Beef</li>
+              <li class="categ-item">Breakfast</li>
+              <li class="categ-item">Chicken</li>
+              <li class="categ-item">Dessert</li>
+              <li class="categ-item">Goat</li>
+              <li class="categ-item">Lamb</li>
+              <li class="categ-item">Miscellaneous</li>
+              <li class="categ-item">Pasta</li>
+              <li class="categ-item">Pork</li>
+              <li class="categ-item">Seafood</li>
             </ul>
           </div>
         </div>
       </section>
       <!-- Popular recipes -->
-      <section>
-        <h2>Popular recipes</h2>
-        <div>
-          <img
-            src=""
-            srcset="/images/popular recipes/unsplash_J9lD6FS6_cs.jpg 1x, /images/popular recipes/unsplash_J9lD6FS6_cs-@2x.jpg 2x"
-            alt="omlette"
-          />
-          <div>
-            <h3>French Omelette</h3>
-            <p>
-              A French omelette is a simple yet elegant dish made with whisked
-              eggs, butter, salt, and pepper, cooked gently until light and
-              fluffy, then folded over and served for a comforting and refined
-              meal any time of day.
-            </p>
+      <section class="popular-recipe-section">
+        <div class="popular-recipe-container">
+          <h2 class="popular-recipe-title">Popular recipes</h2>
+          <div class="popular-recipe-item-container">
+            <img
+              class="popular-recipe-img"
+              src="/images/popular recipes/unsplash_J9lD6FS6_cs.jpg"
+              srcset="/images/popular recipes/unsplash_J9lD6FS6_cs.jpg 1x, /images/popular recipes/unsplash_J9lD6FS6_cs-@2x.jpg 2x"
+              alt="omlette"
+            />
+            <div class="popular-recipe-des-container">
+              <p class="popular-recipe-des-title">French Omelette</p>
+              <p class="popular-recipe-des-substring">
+                A French omelette is a simple yet elegant dish made with whisked
+                eggs, butter, salt, and pepper, cooked gently until light and
+                fluffy, then folded over and served for a comforting and refined
+                meal any time of day.
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-          <img
-            src="/images/popular recipes/unsplash_J9lD6FS6_cspasta.jpg"
-            srcset="/images/popular recipes/unsplash_J9lD6FS6_cspasta.jpg 1x, /images/popular recipes/unsplash_J9lD6FS6_cspasta-@2x.jpg 2x"
-            alt="pasta"
-          />
-          <div>
-            <h3>Squash linguine</h3>
-            <p>
-              Squash linguine is a flavorful and nutritious pasta alternative
-              made with spiralized squash noodles, paired with a variety of
-              delicious sauces and toppings for a satisfying and healthy meal.
-            </p>
+          <div class="popular-recipe-item-container">
+            <img
+              class="popular-recipe-img"
+              src="/images/popular recipes/unsplash_J9lD6FS6_cspasta.jpg"
+              srcset="/images/popular recipes/unsplash_J9lD6FS6_cspasta.jpg 1x, /images/popular recipes/unsplash_J9lD6FS6_cspasta-@2x.jpg 2x"
+              alt="pasta"
+            />
+            <div class="popular-recipe-des-container">
+              <p class="popular-recipe-des-title">Squash linguine</p>
+              <p class="popular-recipe-des-substring">
+                Squash linguine is a flavorful and nutritious pasta alternative
+                made with spiralized squash noodles, paired with a variety of
+                delicious sauces and toppings for a satisfying and healthy meal.
+              </p>
+            </div>
+          </div>
+          <div class="popular-recipe-item-container">
+            <img
+              class="popular-recipe-img"
+              src="/images/popular recipes/unsplash_J9lD6FS6_cs-sec.jpg"
+              srcset="/images/popular recipes/unsplash_J9lD6FS6_cs-sec.jpg 1x, /images/popular recipes/unsplash_J9lD6FS6_cs-sec-@2x.jpg 2x"
+              alt="baked salmon foto"
+            />
+            <div class="popular-recipe-des-container">
+              <p class="popular-recipe-des-title">Baked Salmon</p>
+              <p class="popular-recipe-des-substring">
+                Baked salmon is a flavorful and nutritious dish featuring tender
+                and moist fillets seasoned with a blend of lemon juice, garlic,
+                and olive oil.
+              </p>
+            </div>
+          </div>
+          <div class="popular-recipe-item-container">
+            <img
+              class="popular-recipe-img"
+              src="/images/popular recipes/unsplash_J9lD6FS6_cs-third.jpg"
+              srcset="/images/popular recipes/unsplash_J9lD6FS6_cs-third.jpg 1x, /images/popular recipes/unsplash_J9lD6FS6_cs-third-@2x.jpg 2x"
+              alt="sugar pie foto"
+            />
+            <div class="popular-recipe-des-container">
+              <p class="popular-recipe-des-title">Sugar pie</p>
+              <p class="popular-recipe-des-substring">
+                Sugar pie is a traditional Canadian dessert made with a rich and
+                buttery filling of brown sugar, cream, and flour, poured into a
+                flaky pastry crust and baked until golden brown.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!-- Choose Section -->
-       <section>
-        <label for="">
-          <input type="text">
-        </label>
-        <label for="">
-          <select name="" id="">
-            <option>10 min</option>
-            <option>20 min</option>
-            <option>30 min</option>
-            <option>40 min</option>
-          </select>
-        </label>
-        <label for="">
-          <select name="" id="">
-            <option>French</option>
-            <option>Spanish</option>
-            <option>Italian</option>
-            <option>English</option>
-            <option>Norwegian</option>
-            <option>Ukrainian</option>
-          </select>
-        </label>
-        <label for="">
-          <select name="" id="">
-            <option>Cabbage</option>
-            <option>Cucumber</option>
-            <option>Tomato</option>
-            <option>Corn</option>
-            <option>Radish</option>
-            <option>Parsley</option>
-          </select>
-        </label>
-       </section>
+      <section>
+        <label for="">Search</label>
+        <input type="text" placeholder="Enter Text" />
+        <svg class="" width="18" height="18">
+          <use href="/images/icons.svg#icon-search-3-1"></use>
+        </svg>
+        <label for="">Time</label>
+        <select name="" id="">
+          <option value="" disabled selected>0 min</option>
+          <option>10 min</option>
+          <option>20 min</option>
+          <option>30 min</option>
+          <option>40 min</option>
+        </select>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M4.5 6.75L9 11.25L13.5 6.75"
+            stroke="#050505"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <label for="">Area</label>
+        <select name="" id="">
+          <option class="region-item" disabled selected>Region</option>
+          <option class="region-item" >French</option>
+          <option class="region-item" >Spanish</option>
+          <option class="region-item" >Italian</option>
+          <option class="region-item" >English</option>
+          <option class="region-item" >Norwegian</option>
+          <option class="region-item" >Ukrainian</option>
+        </select>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M4.5 6.75L9 11.25L13.5 6.75"
+            stroke="#050505"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <label for="">Ingredients</label>
+        <select name="" id="">
+          <option class="product-item" disabled selected>Product</option>
+          <option class="product-item">Cabbage</option>
+          <option class="product-item">Cucumber</option>
+          <option class="product-item">Tomato</option>
+          <option class="product-item">Corn</option>
+          <option class="product-item">Radish</option>
+          <option class="product-item">Parsley</option>
+        </select>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M4.5 6.75L9 11.25L13.5 6.75"
+            stroke="#050505"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M12 4L4 12"
+              stroke="#9BB537"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L12 12"
+              stroke="#9BB537"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>Reset the filter</p>
+        </div>
+      </section>
+      <!-- Dishes List Section -->
+      <section>
+        <ul>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>BANANA pANCAKES</p>
+              <p>
+                Banana pancakes are a fluffy and sweet breakfast dish made with
+                mashed ripe bananas, eggs, flour, and a touch of cinnamon,
+                cooked to perfection on a skillet and served with toppings of
+                your choice.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>HAM HOCK COLCANNON</p>
+              <p>
+                Ham hock colcannon is a hearty Irish dish consisting of mashed
+                potatoes mixed with kale or cabbage, and diced ham hock for
+                added flavor and texture.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>Salmon eggs Benedict</p>
+              <p>
+                Salmon eggs Benedict is a delicious brunch dish that features a
+                toasted English muffin topped with smoked salmon, poached eggs,
+                and hollandaise sauce, garnished with fresh herbs and served
+                with a side of roasted tomatoes.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>French Omelette</p>
+              <p>
+                A French omelette is a simple yet elegant dish made with whisked
+                eggs, butter, salt, and pepper, cooked gently until light and
+                fluffy, then folded over and served for a comforting and refined
+                meal any time of day.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>Cheese Sandwich</p>
+              <p>
+                A cheese sandwich is a simple and classic sandwich made with
+                slices of cheese between two pieces of bread, typically toasted
+                to melty perfection.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>English Breakfast</p>
+              <p>
+                English breakfast is a traditional morning meal in England that
+                typically includes eggs (usually fried, scrambled or poached),
+                bacon, sausages, baked beans, grilled tomatoes, sautéed
+                mushrooms, and toast, served with a cup of tea or coffee.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>Boxty Breakfast</p>
+              <p>
+                Boxty breakfast is a hearty Irish morning meal that features
+                boxty, a type of potato pancake made with grated potatoes,
+                flour, and milk, typically served with a variety of breakfast
+                foods such as bacon, sausages, eggs, and grilled tomatoes.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>Breakfast Potatoes</p>
+              <p>
+                Breakfast potatoes are a delicious and savory side dish commonly
+                served during breakfast or brunch, typically made by frying or
+                roasting diced or sliced potatoes with spices, herbs, onions,
+                and sometimes bell peppers, until crispy and golden brown on the
+                outside and soft on the inside.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+              <p>Fruit and Cream Cheese Breakfast</p>
+              <p>
+                Fruit and cream cheese breakfast is a light and refreshing
+                morning meal that features a bagel or toast topped with a layer
+                of cream cheese and fresh fruit such as berries, sliced peaches,
+                or bananas, often drizzled with honey or a sprinkle of cinnamon
+                for added flavor.
+              </p>
+              <div>
+                <p>4.5</p>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <svg class="" width="14" height="14">
+                  <use href="/images/icons.svg#icon-Star"></use>
+                </svg>
+                <button>See recipe</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Pagination Section -->
+      <section>
+        <nav aria-label="Pagination">
+          <div>
+            <button>
+              <div class="pagination-button-left">
+                <span class="arrow-left"></span>
+                <span class="arrow-left"></span>
+              </div>
+            </button>
+            <button>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M10.5999 12.71C10.5062 12.617 10.4318 12.5064 10.381 12.3846C10.3303 12.2627 10.3041 12.132 10.3041 12C10.3041 11.868 10.3303 11.7373 10.381 11.6154C10.4318 11.4936 10.5062 11.383 10.5999 11.29L15.1899 6.71C15.2836 6.61704 15.358 6.50644 15.4088 6.38458C15.4596 6.26272 15.4857 6.13201 15.4857 6C15.4857 5.86799 15.4596 5.73728 15.4088 5.61542C15.358 5.49356 15.2836 5.38296 15.1899 5.29C15.0026 5.10375 14.7491 4.99921 14.4849 4.99921C14.2207 4.99921 13.9673 5.10375 13.7799 5.29L9.18992 9.88001C8.62812 10.4425 8.31256 11.205 8.31256 12C8.31256 12.795 8.62812 13.5575 9.18992 14.12L13.7799 18.71C13.9662 18.8948 14.2176 18.9989 14.4799 19C14.6115 19.0008 14.742 18.9756 14.8638 18.9258C14.9857 18.876 15.0965 18.8027 15.1899 18.71C15.2836 18.6171 15.358 18.5065 15.4088 18.3846C15.4596 18.2627 15.4857 18.132 15.4857 18C15.4857 17.868 15.4596 17.7373 15.4088 17.6154C15.358 17.4936 15.2836 17.383 15.1899 17.29L10.5999 12.71Z"
+                  fill="#F8F8F8"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>...</button>
+          </div>
+          <div>
+            <button>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.4001 12.7101C13.4939 12.6171 13.5683 12.5065 13.619 12.3846C13.6698 12.2628 13.6959 12.1321 13.6959 12.0001C13.6959 11.8681 13.6698 11.7374 13.619 11.6155C13.5683 11.4936 13.4939 11.383 13.4001 11.2901L8.81014 6.71006C8.71641 6.6171 8.64202 6.5065 8.59125 6.38464C8.54048 6.26278 8.51434 6.13207 8.51434 6.00006C8.51434 5.86805 8.54048 5.73734 8.59125 5.61548C8.64202 5.49362 8.71641 5.38302 8.81014 5.29006C8.9975 5.10381 9.25095 4.99927 9.51514 4.99927C9.77933 4.99927 10.0328 5.10381 10.2201 5.29006L14.8101 9.88007C15.3719 10.4426 15.6875 11.2051 15.6875 12.0001C15.6875 12.7951 15.3719 13.5576 14.8101 14.1201L10.2201 18.7101C10.0339 18.8948 9.78248 18.999 9.52014 19.0001C9.38853 19.0008 9.25807 18.9756 9.13623 18.9258C9.0144 18.8761 8.90358 18.8028 8.81014 18.7101C8.71641 18.6171 8.64202 18.5065 8.59125 18.3847C8.54048 18.2628 8.51434 18.1321 8.51434 18.0001C8.51434 17.8681 8.54048 17.7374 8.59125 17.6155C8.64202 17.4936 8.71641 17.383 8.81014 17.2901L13.4001 12.7101Z"
+                  fill="#050505"
+                />
+              </svg>
+            </button>
+            <button>
+              <div class="pagination-button-right">
+                <span class="arrow-right"></span>
+                <span class="arrow-right"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </section>
     </main>
   </body>
 </html>
