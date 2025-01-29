@@ -10,14 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link href="/css/home-page.css" />
-    <link href="/parcials/favourites.html" />
+    <link rel="stylesheet" href="/css/home-page.css" />
+    <!-- <link href="/parcials/favourites.html" /> -->
   </head>
   <body>
     <!-- Header Section  -->
     <header class="header-page">
       <div class="header-container container">
-        <nav class="header-nav">
+        <nav class="header-nav hide">
           <ul class="header-list">
             <li class="header-item header-item-active">
               <a href="/parcials/home-page.html">Home</a>
@@ -30,76 +30,78 @@
         <a class="header-logo" href="./home-page.html"
           ><span class="logo-part">tasty</span>treats.</a
         >
-        <div class="header-container-basket">
-          <svg
-            class="header-logo-basket"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
-              fill="#050505"
-              stroke="#050505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
-              fill="#050505"
-              stroke="#050505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
-              stroke="#050505"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-        <div class="header-container-logo-burgermenu">
-          <svg
-            class="header-logo-burgermenu"
-            width="32"
-            height="33"
-            viewBox="0 0 32 33"
-            fill="none"
-          >
-            <path
-              d="M28 13.8333H4"
-              stroke="#050505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M28 8.5H4"
-              stroke="#050505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M28 19.1667H4"
-              stroke="#050505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M28 24.5H4"
-              stroke="#050505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <div class="header-mob-icons-container">
+            <button class="header-mob-busket-btn">
+              <svg
+                class="header-logo-basket"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                  fill="#050505"
+                  stroke="#050505"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                  fill="#050505"
+                  stroke="#050505"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                  stroke="#050505"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="header-mob-burger-btn">
+              <svg
+                class="header-logo-burgermenu"
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+              >
+                <path
+                  d="M28 13.8333H4"
+                  stroke="#050505"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M28 8.5H4"
+                  stroke="#050505"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M28 19.1667H4"
+                  stroke="#050505"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M28 24.5H4"
+                  stroke="#050505"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
         </div>
         <div>
           <div>
@@ -110,7 +112,7 @@
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="hero-section">
+      <section class="hero-section hide">
         <div class="hero-container container">
           <h1 class="hero-main-title">
             Learn to Cook
@@ -210,7 +212,7 @@
         </div>
       </section>
       <!-- Categories Section -->
-      <section class="categ-section">
+      <section class="categ-section hide">
         <div class="categ-container container">
           <button class="all-categ-button">All categories</button>
           <div class="categ-list-container">
@@ -230,7 +232,7 @@
         </div>
       </section>
       <!-- Popular recipes -->
-      <section class="popular-recipe-section">
+      <section class="popular-recipe-section hide">
         <div class="popular-recipe-container">
           <h2 class="popular-recipe-title">Popular recipes</h2>
           <div class="popular-recipe-item-container">
@@ -301,7 +303,7 @@
         </div>
       </section>
       <!-- Choose Section -->
-      <section class="choose-section">
+      <section class="choose-section hide">
         <div class="choose-container container">
           <label for="">Search</label>
           <input type="text" placeholder="Enter Text" />
@@ -388,7 +390,7 @@
         </div>
       </section>
       <!-- Dishes List Section -->
-      <section class="diahes-section">
+      <section class="diahes-section hide">
         <div class="dishes-container container">
           <ul class="diahes-list">
             <li class="diahes-item">
@@ -728,7 +730,7 @@
         </div>
       </section>
       <!-- Pagination Section -->
-      <section class="pagination-section">
+      <section class="pagination-section hide">
         <div class="pagination-container container">
           <nav class="pagination-nav" aria-label="Pagination">
             <div class="pagination-left-container">

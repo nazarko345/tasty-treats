@@ -1,0 +1,130 @@
+/* common styles */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #050505;
+  background-color: #f8f8f8;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hide {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4.h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+}
+
+::after {
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 335px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 704px) and (max-width: 1079px) {
+  .container {
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    max-width: 1079px;
+    padding: 0 100px;
+  }
+}
+
+/* header section */
+.header-page {
+  position: fixed;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-logo {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #050505;
+}
+
+.logo-part {
+  color: #9bb537;
+}
+
+.header-logo-basket,
+.header-logo-burgermenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-mob-icons-container {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.header-mob-busket-btn,
+.header-mob-burger-btn {
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+}
