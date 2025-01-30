@@ -31,7 +31,8 @@
           ><span class="logo-part">tasty</span>treats.</a
         >
         <div class="header-mob-icons-container">
-            <button class="header-mob-busket-btn">
+          <button class="header-mob-busket-btn">
+            <a class="header-mob-busket-link" href="/parcials/favourites.html">
               <svg
                 class="header-logo-basket"
                 width="24"
@@ -63,8 +64,10 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </button>
-            <button class="header-mob-burger-btn">
+            </a>
+          </button>
+          <button data-menu-open class="header-mob-burger-btn">
+            <a class="header-mob-burger-link">
               <svg
                 class="header-logo-burgermenu"
                 width="32"
@@ -101,11 +104,59 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </button>
+            </a>
+          </button>
         </div>
-        <div>
-          <div>
-            <div></div>
+
+        <div data-menu class="backdrop">
+          <div class="menu">
+            <button data-menu-close class="menu-close">
+              <svg
+                class="header-mob-close-icon"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M24 8L8 24"
+                  stroke="#F8F8F8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 8L24 24"
+                  stroke="#F8F8F8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <nav class="header-nav-mob">
+              <ul class="header-list-mob">
+                <li class="header-item-mob">
+                  <a
+                    class="header-item-mob-link header-item-mob-active-link"
+                    href="/parcials/home-page.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="header-item-mob">
+                  <a
+                    class="header-item-mob-link"
+                    href="/parcials/favourites.html"
+                    >Favorites</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="switch-container-mob">
+              <div class="switch-overlay-mob">
+                <div class="switch-small-circle-mob"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -400,10 +451,10 @@
                 </svg>
                 <p class="diahes-item-title">BANANA pANCAKES</p>
                 <p class="diahes-item-des">
-                  Banana pancakes are a fluffy and sweet breakfast dish made with
-                  mashed ripe bananas, eggs, flour, and a touch of cinnamon,
-                  cooked to perfection on a skillet and served with toppings of
-                  your choice.
+                  Banana pancakes are a fluffy and sweet breakfast dish made
+                  with mashed ripe bananas, eggs, flour, and a touch of
+                  cinnamon, cooked to perfection on a skillet and served with
+                  toppings of your choice.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -473,10 +524,10 @@
                 </svg>
                 <p class="diahes-item-title">Salmon eggs Benedict</p>
                 <p class="diahes-item-des">
-                  Salmon eggs Benedict is a delicious brunch dish that features a
-                  toasted English muffin topped with smoked salmon, poached eggs,
-                  and hollandaise sauce, garnished with fresh herbs and served
-                  with a side of roasted tomatoes.
+                  Salmon eggs Benedict is a delicious brunch dish that features
+                  a toasted English muffin topped with smoked salmon, poached
+                  eggs, and hollandaise sauce, garnished with fresh herbs and
+                  served with a side of roasted tomatoes.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -510,10 +561,10 @@
                 </svg>
                 <p class="diahes-item-title">French Omelette</p>
                 <p class="diahes-item-des">
-                  A French omelette is a simple yet elegant dish made with whisked
-                  eggs, butter, salt, and pepper, cooked gently until light and
-                  fluffy, then folded over and served for a comforting and refined
-                  meal any time of day.
+                  A French omelette is a simple yet elegant dish made with
+                  whisked eggs, butter, salt, and pepper, cooked gently until
+                  light and fluffy, then folded over and served for a comforting
+                  and refined meal any time of day.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -548,8 +599,8 @@
                 <p class="diahes-item-title">Cheese Sandwich</p>
                 <p class="diahes-item-des">
                   A cheese sandwich is a simple and classic sandwich made with
-                  slices of cheese between two pieces of bread, typically toasted
-                  to melty perfection.
+                  slices of cheese between two pieces of bread, typically
+                  toasted to melty perfection.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -583,10 +634,11 @@
                 </svg>
                 <p class="diahes-item-title">English Breakfast</p>
                 <p class="diahes-item-des">
-                  English breakfast is a traditional morning meal in England that
-                  typically includes eggs (usually fried, scrambled or poached),
-                  bacon, sausages, baked beans, grilled tomatoes, sautéed
-                  mushrooms, and toast, served with a cup of tea or coffee.
+                  English breakfast is a traditional morning meal in England
+                  that typically includes eggs (usually fried, scrambled or
+                  poached), bacon, sausages, baked beans, grilled tomatoes,
+                  sautéed mushrooms, and toast, served with a cup of tea or
+                  coffee.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -657,11 +709,11 @@
                 </svg>
                 <p class="diahes-item-title">Breakfast Potatoes</p>
                 <p class="diahes-item-des">
-                  Breakfast potatoes are a delicious and savory side dish commonly
-                  served during breakfast or brunch, typically made by frying or
-                  roasting diced or sliced potatoes with spices, herbs, onions,
-                  and sometimes bell peppers, until crispy and golden brown on the
-                  outside and soft on the inside.
+                  Breakfast potatoes are a delicious and savory side dish
+                  commonly served during breakfast or brunch, typically made by
+                  frying or roasting diced or sliced potatoes with spices,
+                  herbs, onions, and sometimes bell peppers, until crispy and
+                  golden brown on the outside and soft on the inside.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -693,13 +745,15 @@
                 <svg class="diahes-fav-icon" width="" height="">
                   <use href=""></use>
                 </svg>
-                <p class="diahes-item-title">Fruit and Cream Cheese Breakfast</p>
+                <p class="diahes-item-title">
+                  Fruit and Cream Cheese Breakfast
+                </p>
                 <p class="diahes-item-des">
                   Fruit and cream cheese breakfast is a light and refreshing
-                  morning meal that features a bagel or toast topped with a layer
-                  of cream cheese and fresh fruit such as berries, sliced peaches,
-                  or bananas, often drizzled with honey or a sprinkle of cinnamon
-                  for added flavor.
+                  morning meal that features a bagel or toast topped with a
+                  layer of cream cheese and fresh fruit such as berries, sliced
+                  peaches, or bananas, often drizzled with honey or a sprinkle
+                  of cinnamon for added flavor.
                 </p>
                 <div class="diahes-rating-container">
                   <p>4.5</p>
@@ -741,7 +795,13 @@
                 </div>
               </button>
               <button class="pagination-button-left-container">
-                <svg class="pagination-icon-one-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <svg
+                  class="pagination-icon-one-arrow"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
                   <path
                     d="M10.5999 12.71C10.5062 12.617 10.4318 12.5064 10.381 12.3846C10.3303 12.2627 10.3041 12.132 10.3041 12C10.3041 11.868 10.3303 11.7373 10.381 11.6154C10.4318 11.4936 10.5062 11.383 10.5999 11.29L15.1899 6.71C15.2836 6.61704 15.358 6.50644 15.4088 6.38458C15.4596 6.26272 15.4857 6.13201 15.4857 6C15.4857 5.86799 15.4596 5.73728 15.4088 5.61542C15.358 5.49356 15.2836 5.38296 15.1899 5.29C15.0026 5.10375 14.7491 4.99921 14.4849 4.99921C14.2207 4.99921 13.9673 5.10375 13.7799 5.29L9.18992 9.88001C8.62812 10.4425 8.31256 11.205 8.31256 12C8.31256 12.795 8.62812 13.5575 9.18992 14.12L13.7799 18.71C13.9662 18.8948 14.2176 18.9989 14.4799 19C14.6115 19.0008 14.742 18.9756 14.8638 18.9258C14.9857 18.876 15.0965 18.8027 15.1899 18.71C15.2836 18.6171 15.358 18.5065 15.4088 18.3846C15.4596 18.2627 15.4857 18.132 15.4857 18C15.4857 17.868 15.4596 17.7373 15.4088 17.6154C15.358 17.4936 15.2836 17.383 15.1899 17.29L10.5999 12.71Z"
                     fill="#F8F8F8"
@@ -758,7 +818,8 @@
             </div>
             <div class="pagination-right-container">
               <button class="pagination-right-buttons">
-                <svg class="pagination-right-buttons-icon"
+                <svg
+                  class="pagination-right-buttons-icon"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -782,5 +843,7 @@
         </div>
       </section>
     </main>
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/pop-up.js"></script>
   </body>
 </html>
