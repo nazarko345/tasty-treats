@@ -17,13 +17,13 @@
     <!-- Header Section  -->
     <header class="header-page">
       <div class="header-container container">
-        <nav class="header-nav hide">
+        <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item header-item-active">
-              <a href="/parcials/home-page.html">Home</a>
+              <a class="header-link-active" href="/parcials/home-page.html">Home</a>
             </li>
             <li class="header-item">
-              <a href="/parcials/favourites.html">Favorites</a>
+              <a class="header-item-link" href="/parcials/favourites.html">Favorites</a>
             </li>
           </ul>
         </nav>
@@ -106,8 +106,13 @@
               </svg>
             </a>
           </button>
+          <div class="switch-container-universal">
+            <div class="switch-overlay">
+              <div class="switch-small-circle"></div>
+            </div>
+          </div>
         </div>
-
+        <!-- Menu Backdrop Section -->
         <div data-menu class="backdrop">
           <div class="menu">
             <button data-menu-close class="menu-close">
@@ -153,8 +158,8 @@
               </ul>
             </nav>
             <div class="switch-container-mob">
-              <div class="switch-overlay-mob">
-                <div class="switch-small-circle-mob"></div>
+              <div class="switch-overlay">
+                <div class="switch-small-circle"></div>
               </div>
             </div>
           </div>
