@@ -253,8 +253,7 @@ button {
     color: #050505;
   }
   .header-logo {
-    position: absolute;
-    align-items: center;
+    margin: 0 auto;
   }
 }
 
@@ -268,7 +267,9 @@ button {
   .switch-container-universal {
     display: block;
   }
-
+  .header-logo {
+    margin: 0 auto;
+  }
   .header-nav {
     display: block;
   }
@@ -287,9 +288,5 @@ button {
     font-weight: 400;
     font-size: 12px;
     color: #050505;
-  }
-  .header-logo {
-    position: absolute;
-    align-items: center;
   }
 }
