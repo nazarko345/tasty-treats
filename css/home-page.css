@@ -363,7 +363,7 @@ button {
 }
 
 .hero-shefs-container {
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: transform 450ms ease-in-out;
 }
 
