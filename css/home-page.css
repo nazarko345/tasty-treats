@@ -349,7 +349,7 @@ button {
   color: #050505;
   border-radius: 12px;
   padding: 10px 20px;
-  max-width: 111px;
+  max-width: 113px;
   height: 37px;
   margin-top: 32px;
   margin-bottom: 48px;
@@ -579,7 +579,7 @@ button {
   }
   .hero-order-button {
     padding: 14px 28px;
-    max-width: 127px;
+    max-width: 129px;
     height: 45px;
   }
   /* f */
@@ -711,7 +711,7 @@ button {
   .hero-order-button {
     padding: 14px 28px;
     margin-top: 16px;
-    max-width: 127px;
+    max-width: 129px;
     height: 45px;
   }
 
