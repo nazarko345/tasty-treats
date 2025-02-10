@@ -100,9 +100,10 @@ button {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 24px;
 }
+
 .header-logo {
   font-weight: 600;
   font-size: 16px;
@@ -110,9 +111,11 @@ button {
   letter-spacing: -0.04em;
   color: #050505;
 }
+
 .logo-part {
   color: #9bb537;
 }
+
 .header-logo-basket,
 .header-logo-burgermenu {
   display: flex;
@@ -133,7 +136,7 @@ button {
   display: flex;
   gap: 14px;
   position: absolute;
-  right: 20px;
+  right: 0;
   align-items: center;
 }
 
@@ -142,7 +145,7 @@ button {
   background-color: transparent;
 }
 
-.backdrop {
+.overlay {
   display: flex;
   position: fixed;
   top: 0;
@@ -153,7 +156,6 @@ button {
   background-color: #9bb537;
   opacity: 0;
   pointer-events: none;
-  transform: translateX(50);
   transition: 200ms ease-in-out;
 }
 
@@ -168,6 +170,7 @@ button {
   flex-direction: column;
   position: relative;
   transition: right 300ms ease-in-out;
+  padding: 0;
 }
 
 .header-mob-close-icon {
@@ -181,6 +184,8 @@ button {
   font-weight: 500;
   font-size: 12px;
   color: #fff;
+  display: block;
+  text-align: center;
 }
 
 .header-item-mob-link {
@@ -372,12 +377,19 @@ button {
 }
 
 .hero-shefs-container {
+  display: flex;
   transform: translateX(0);
   transition: transform 450ms ease-in-out;
 }
 
 .hero-shefs-parent-container {
+  position: relative;
   overflow: hidden;
+}
+
+.hero-shefs-container > div {
+  width: 100%;
+  flex: 0 0 100%;
 }
 /* f */
 .first-shef-container {
