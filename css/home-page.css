@@ -120,6 +120,14 @@ button {
   cursor: pointer;
 }
 
+/* .header-logo-basket:hover,
+.header-logo-basket:focus,
+.header-logo-burgermenu:hover,
+.header-logo-burgermenu:focus {
+  fill: #9BB537;
+} */
+
+
 .header-mob-icons-container {
   display: flex;
   gap: 14px;
