@@ -603,6 +603,9 @@ button {
     max-width: 129px;
     height: 45px;
   }
+  .hero-shefs-parent-container {
+    margin-right: -52px;
+  }
   /* f */
   .first-shef-container {
     min-width: 351px;
@@ -707,6 +710,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    min-width: 446px;
   }
   .hero-main-title {
     min-width: 446px;
@@ -735,6 +739,9 @@ button {
     margin-top: 16px;
     max-width: 129px;
     height: 45px;
+  }
+  .hero-shefs-parent-container {
+    margin-right: -120px;
   }
 
   /* f */
