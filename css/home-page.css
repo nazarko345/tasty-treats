@@ -68,7 +68,7 @@ button {
 .container {
   max-width: 335px;
   margin: auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 @media (min-width: 704px) and (max-width: 1079px) {
@@ -81,7 +81,7 @@ button {
 @media screen and (min-width: 1080px) {
   .container {
     max-width: 1079px;
-    padding: 0 100px;
+    padding: 50px 100px;
   }
 }
 
@@ -89,9 +89,6 @@ button {
 .header-page {
   left: 0;
   width: 100%;
-  padding-bottom: 40px;
-  /* background-color: #f8f8f8; */
-  /* position: fixed; */
   z-index: 1000;
 }
 
@@ -100,8 +97,8 @@ button {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  /* margin: 0 auto; */
-  padding-top: 24px;
+  padding-top: 27px;
+  padding-bottom: 70px;
 }
 
 .header-logo {
@@ -240,6 +237,9 @@ button {
 }
 
 @media (min-width: 704px) and (max-width: 1079px) {
+  .header-container {
+    padding-top: 28px;
+  }
   .backdrop {
     display: none;
   }
@@ -319,19 +319,15 @@ button {
 
 /* hero section */
 
-.hero-section {
-  padding: 40px 0;
-  margin-top: 0;
-}
-
 .hero-container {
-  padding: 0;
+  padding: 20px;
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-width: 335px;
 }
 
 .hero-main-title {
@@ -365,7 +361,7 @@ button {
   padding: 10px 20px;
   max-width: 113px;
   height: 37px;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-bottom: 48px;
   transition: all 250ms ease-in-out;
 }
@@ -385,6 +381,8 @@ button {
 .hero-shefs-parent-container {
   position: relative;
   overflow: hidden;
+  margin-right: -40px;
+
 }
 
 .hero-shefs-container > div {
@@ -599,6 +597,8 @@ button {
     color: #050505;
   }
   .hero-order-button {
+    margin-top: 32px;
+    margin-bottom: 64px;
     padding: 14px 28px;
     max-width: 129px;
     height: 45px;
@@ -701,6 +701,7 @@ button {
     gap: 32px;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
   }
   .hero-text-container {
     display: flex;
