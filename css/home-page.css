@@ -56,10 +56,6 @@ button {
   padding: 0;
 }
 
-::after {
-  box-sizing: border-box;
-}
-
 ::before,
 ::after {
   box-sizing: border-box;
@@ -83,6 +79,44 @@ button {
     max-width: 1079px;
     padding: 50px 100px;
   }
+}
+
+/* loader animation */
+
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #cecdcd;
+  border-bottom-color: #9bb537;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 250ms ease-in-out;
 }
 
 /* header section */
@@ -365,7 +399,8 @@ button {
   transition: all 250ms ease-in-out;
 }
 
-:hover.hero-order-button {
+:hover.hero-order-button,
+:focus.hero-order-button {
   background-color: #9bb537;
   color: #f8f8f8;
   transition: all 250ms cubic-bezier(0.21, 0.02, 0.35, 0.14);
