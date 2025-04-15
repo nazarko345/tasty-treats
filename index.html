@@ -1,128 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/tasty-treats/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Learn to Cook Deliciously</title>
     <script type="module" crossorigin src="/tasty-treats/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/tasty-treats/assets/index-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/tasty-treats/assets/index-B-4SalM0.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/tasty-treats/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <!-- Header Section  -->
+<header class="header-page">
+  <div class="header-container container">
+    <nav class="header-nav"> 
+      <ul class="header-list">
+        <li class="header-item header-item-active">
+          <a class="header-link-active" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-item">
+          <a class="header-item-link" href="">Favorites</a>
         </li>
       </ul>
-    </nav>
+    </nav> 
+    <a class="header-logo" href="#"
+      ><span class="logo-part">tasty</span>treats.</a
+    >
+    <div class="header-mob-icons-container">
+      <button class="header-mob-busket-btn">
+        <a class="header-mob-busket-link" href="#">
+          <svg class="header-logo-basket" width="24" height="24">
+            <use href="/img/icons.svg#icon-basket"></use>
+          </svg>
+        </a>
+      </button>
+      <button data-menu-open class="header-mob-burger-btn">
+        <a class="header-mob-burger-link">
+          <svg class="header-logo-burgermenu" width="32" height="33">
+            <use href="/img/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </a>
+      </button>
+      <div class="switch-container-universal">
+        <div class="switch-overlay">
+          <div class="switch-small-circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Menu Backdrop Section -->
+  <div data-menu class="overlay">
+    <div class="menu">
+      <button data-menu-close class="menu-close">
+        <svg class="header-mob-close-icon" width="32" height="52">
+          <use href="/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="header-nav-mob">
+        <ul class="header-list-mob">
+          <li class="header-item-mob">
+            <a class="header-item-mob-active-link" href="/home-page.html"
+              >Home</a
+            >
+          </li>
+          <li class="header-item-mob">
+            <a class="header-item-mob-link" href="/index2.html">Favorites</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="switch-container-mob">
+        <div class="switch-overlay">
+          <div class="switch-small-circle"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
-
-
+ 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/tasty-treats/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-container container">
+    <div class="hero-text-container">
+      <h1 class="hero-main-title">
+        Learn to Cook
+        <span class="hero-main-title-part">Tasty Treats'</span>
+        Customizable Masterclass
+      </h1>
+      <p class="hero-substring">
+        TastyTreats - Customize Your Meal with Ingredient Options and
+        Step-by-Step Video Guides.
+      </p>
+      <button class="hero-order-button" type="button">Order now</button>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <div class="hero-shefs-parent-container">
+      <div class="hero-shefs-container">
+        <div class="first-shef-container shef-container">
+          <div class="first-shef-img-container">
+            <img
+              class="first-shef-img"
+              srcset="/img/cooks/IMG_9893 1.jpg 1x, /img/cooks/IMG_9893 1@2x.jpg 2x"
+              alt="first shef foto"
+              src="/img/cooks/IMG_9893 1.jpg"
+            />
+          </div>
+          <div class="first-shef-dish-img-container">
+            <img
+              class="first-shef-dish-img"
+              src="/img/dishes/IMG_9892-1-second-turn.png"
+              alt="dish foto"
+            />
+            <div class="overlay-container">
+              <p class="overlay-title">Grilled, smoky, delicious barbecue</p>
+              <p class="overlay-subtitle">Spanish</p>
+            </div>
+          </div>
+          <div class="first-shef-zoom-dish-container">
+            <img
+              class="first-shef-zoom-dish-img"
+              src="/img/dishes/background-image-1.jpg"
+              alt="zoomed dish foto"
+              srcset="/img/dishes/image 1.jpg 1x, /img/dishes/image 1-@2x.jpg 2x"
+            />
+          </div>
+        </div>
+        <div class="second-shef-container shef-container">
+          <div class="second-shef-img-container">
+            <img
+              class="second-shef-img"
+              srcset="/img/cooks/IMG_9893 2.jpg 1x, /img/cooks/IMG_9893 2@2x.jpg 2x"
+              alt="second shef foto"
+              src="/img/cooks/IMG_9893 2.jpg"
+            />
+          </div>
+          <div class="second-shef-dish-img-container">
+            <img
+              class="second-shef-dish-img"
+              src="/img/dishes/pizza-picture-second-turn.png"
+              alt="dish foto"
+              srcset="./img/dishes/pizza picture.jpg 1x, ./img/dishes/pizza picture-@2x.jpg 2x"
+            />
+            <div class="overlay-container">
+              <p class="overlay-title">Hot, cheesy and satisfying&nbsp;pizza</p>
+              <p class="overlay-subtitle">Italian</p>
+            </div>
+          </div>
+          <div class="second-shef-zoom-dish-container">
+            <img
+              class="second-shef-zoom-dish-img"
+              src="/img/dishes/card.jpg"
+              alt="zoomed dish foto"
+              srcset="/img/dishes/pizza picture-zoom.jpg 1x, /img/dishes/pizza picture-zoom-@2x.jpg 2x"
+            />
+          </div>
+        </div>
+        <div class="third-shef-container shef-container">
+          <div class="third-shef-img-container">
+            <img
+              class="third-shef-img"
+              srcset="/img/cooks/IMG_9893 3-1.jpg 1x, /img/cooks/IMG_9893 3.jpg 2x"
+              alt="third shef foto"
+              src="/img/cooks/IMG_9893 3-1.jpg"
+            />
+          </div>
+          <div class="third-shef-dish-container">
+            <img
+              class="third-shef-dish-img"
+              src="/img/dishes/IMG_9892 1-second-turn.png"
+              alt="dish foto"
+              srcset="/img/dishes/IMG_9892 2.jpg 1x, /img/dishes/IMG_9892 2-@2x.jpg 2x"
+            />
+            <div class="overlay-container third-overlay-container">
+              <p class="overlay-title">Fluffy and sweet pancakes</p>
+              <p class="overlay-subtitle">American</p>
+            </div>
+          </div>
+          <div class="third-shef-zoom-dish-container">
+            <img
+              class="third-shef-dish-zoom-img"
+              src="/img/dishes/card-2.png"
+              alt="zoomed dish foto"
+              srcset="/img/dishes/IMG_9892 3.jpg 1x, /img/dishes/IMG_9892 3-zoom-@2x.jpg 2x"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="spots-btn-container">
+        <p class="spots-nav">
+          <span class="spot-nav active" onclick="moveSlide(0)">.</span
+          ><span class="spot-nav" onclick="moveSlide(1)">.</span
+          ><span class="spot-nav" onclick="moveSlide(2)">.</span>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+      <!-- Categories Section -->
+<section class="categ-section">
+  <div class="categ-container container">
+    <button class="all-categ-button" type="button">All categories</button>
+    <div class="categ-list-container">
+      <ul class="categ-list">
+        <li class="categ-item">Beef</li>
+        <li class="categ-item active-categ-item">Breakfast</li>
+        <li class="categ-item">Chicken</li>
+        <li class="categ-item">Dessert</li>
+        <li class="categ-item">Goat</li>
+        <li class="categ-item">Lamb</li>
+        <li class="categ-item">Miscellaneous</li>
+        <li class="categ-item">Pasta</li>
+        <li class="categ-item">Pork</li>
+        <li class="categ-item">Seafood</li>
+        <li class="categ-item">Sushi</li>
+        <li class="categ-item">Exotic</li>
+        <li class="categ-item">Dinner</li>
+        <li class="categ-item">Vegetarian</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Popular recipes -->
+<section class="popular-recipe-section">
+  <div class="popular-recipe-container container">
+    <h2 class="popular-recipe-title">Popular recipes</h2>
+    <ul class="popular-recipe-list">
+      <li class="popular-recipe-item">
+        <img
+          class="popular-recipe-img"
+          src="/img/popular recipes/unsplash_J9lD6FS6_cs.jpg"
+          srcset="/img/popular recipes/unsplash_J9lD6FS6_cs.jpg 1x, /img/popular recipes/unsplash_J9lD6FS6_cs-@2x.jpg 2x"
+          alt="omlette"
+        />
+        <div class="popular-recipe-des-container">
+          <p class="popular-recipe-des-title shorter-text">French Omelette</p>
+          <p class="popular-recipe-des-substring">
+            A French omelette is a simple yet elegant dish made with whisked
+            eggs, butter, salt, and pepper, cooked gently until light and
+            fluffy, then folded over and served for a comforting and refined
+            meal any time of day.
+          </p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="popular-recipe-item">
+        <img
+          class="popular-recipe-img"
+          src="/img/popular recipes/unsplash_J9lD6FS6_cspasta.jpg"
+          srcset="/img/popular recipes/unsplash_J9lD6FS6_cspasta.jpg 1x, /img/popular recipes/unsplash_J9lD6FS6_cspasta-@2x.jpg 2x"
+          alt="pasta"
+        />
+        <div class="popular-recipe-des-container">
+          <p class="popular-recipe-des-title shorter-text">Squash linguine</p>
+          <p class="popular-recipe-des-substring">
+            Squash linguine is a flavorful and nutritious pasta alternative made
+            with spiralized squash noodles, paired with a variety of delicious
+            sauces and toppings for a satisfying and healthy meal.
+          </p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="popular-recipe-item-universal">
+        <img
+          class="popular-recipe-img"
+          src="/img/popular recipes/unsplash_J9lD6FS6_cs-sec.jpg"
+          srcset="/img/popular recipes/unsplash_J9lD6FS6_cs-sec.jpg 1x, /img/popular recipes/unsplash_J9lD6FS6_cs-sec-@2x.jpg 2x"
+          alt="baked salmon foto"
+        />
+        <div class="popular-recipe-des-container">
+          <p class="popular-recipe-des-title">Baked Salmon</p>
+          <p class="popular-recipe-des-substring">
+            Baked salmon is a flavorful and nutritious dish featuring tender and
+            moist fillets seasoned with a blend of lemon juice, garlic, and
+            olive oil.
+          </p>
+        </div>
+      </li>
+      <li class="popular-recipe-item-universal">
+        <img
+          class="popular-recipe-img"
+          src="/img/popular recipes/unsplash_J9lD6FS6_cs-third.jpg"
+          srcset="/img/popular recipes/unsplash_J9lD6FS6_cs-third.jpg 1x, /img/popular recipes/unsplash_J9lD6FS6_cs-third-@2x.jpg 2x"
+          alt="sugar pie foto"
+        />
+        <div class="popular-recipe-des-container">
+          <p class="popular-recipe-des-title">Sugar pie</p>
+          <p class="popular-recipe-des-substring">
+            Sugar pie is a traditional Canadian dessert made with a rich and
+            buttery filling of brown sugar, cream, and flour, poured into a
+            flaky pastry crust and baked until golden brown.
+          </p>
+        </div>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <!-- Choose Section -->
+<section class="choose-section">
+  <div class="choose-container container">
+    <div class="main-choose-container">
+      <!-- search input -->
+      <div class="search-container custom-select">
+        <label class="search-label" for="search">Search</label>
+        <input
+          class="search-input"
+          type="text"
+          id="search"
+          placeholder="Enter Text"
+        />
+        <svg class="search-icon" width="18" height="18">
+          <use href="/img/icons.svg#icon-search-3-1"></use>
+        </svg>
+      </div>
+      <!-- row pos cont -->
+      <div class="row-pos-container">
+        <!-- time -->
+        <div class="time-container custom-select">
+          <label class="time-label" for="time">Time</label>
+          <div class="select" name="time" id="time">
+            <div class="select-option addition" selected>0 min</div>
+            <div class="select-option" data-value="1">10 min</div>
+            <div class="select-option" data-value="2">20 min</div>
+            <div class="select-option" data-value="3">30 min</div>
+            <div class="select-option" data-value="4">40 min</div>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path
+              d="M4.5 6.75L9 11.25L13.5 6.75"
+              stroke="#050505"
+              stroke-opacity="0.5"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <!-- area -->
+        <div class="area-container custom-select">
+          <label class="area-label" for="area">Area</label>
+          <div class="select" name="area" id="area">
+            <div class="select-option" selected>Region</div>
+            <div class="select-option">French</div>
+            <div class="select-option">Spanish</div>
+            <div class="select-option addition">Italian</div>
+            <div class="select-option">English</div>
+            <div class="select-option">Norwegian</div>
+            <div class="select-option">Ukrainian</div>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path
+              d="M4.5 6.75L9 11.25L13.5 6.75"
+              stroke="#050505"
+              stroke-opacity="0.5"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <!-- ingredients -->
+      <div class="ingredients-container custom-select">
+        <label class="ingredients-label" for="ingredients">Ingredients</label>
+        <div class="select" name="ingredients" id="ingredients">
+          <div class="product-item" selected>Product</div>
+          <div class="select-option">Cabbage</div>
+          <div class="select-option">Cucumber</div>
+          <div class="select-option">Tomato</div>
+          <div class="select-option">Corn</div>
+          <div class="select-option">Radish</div>
+          <div class="select-option">Parsley</div>
+        </div>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M4.5 6.75L9 11.25L13.5 6.75"
+            stroke="#050505"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- reset -->
+    <div class="reset-filter-container">
+      <svg
+        class="reset-close-icon"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+      >
+        <path
+          d="M12 4L4 12"
+          stroke="#9BB537"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 4L12 12"
+          stroke="#9BB537"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <p class="reset-filter-text">Reset the filter</p>
+    </div>
+  </div>
+</section>
+
+      <!-- Cards Section -->
+<section class="diahes-section hide">
+  <div class="dishes-container container">
+    <ul class="diahes-list"></ul>
+  </div>
+</section>
 
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <!-- Pagination Section -->
+<section class="pagination-section hide">
+  <div class="pagination-container container">
+    <nav class="pagination-nav" aria-label="Pagination">
+      <div class="pagination-left-container">
+        <button class="pagination-button-left-container">
+          <div class="pagination-button-left">
+            <span class="arrow-left-two"></span>
+            <span class="arrow-left-two"></span>
+          </div>
+        </button>
+        <button class="pagination-button-left-container">
+          <svg
+            class="pagination-icon-one-arrow"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M10.5999 12.71C10.5062 12.617 10.4318 12.5064 10.381 12.3846C10.3303 12.2627 10.3041 12.132 10.3041 12C10.3041 11.868 10.3303 11.7373 10.381 11.6154C10.4318 11.4936 10.5062 11.383 10.5999 11.29L15.1899 6.71C15.2836 6.61704 15.358 6.50644 15.4088 6.38458C15.4596 6.26272 15.4857 6.13201 15.4857 6C15.4857 5.86799 15.4596 5.73728 15.4088 5.61542C15.358 5.49356 15.2836 5.38296 15.1899 5.29C15.0026 5.10375 14.7491 4.99921 14.4849 4.99921C14.2207 4.99921 13.9673 5.10375 13.7799 5.29L9.18992 9.88001C8.62812 10.4425 8.31256 11.205 8.31256 12C8.31256 12.795 8.62812 13.5575 9.18992 14.12L13.7799 18.71C13.9662 18.8948 14.2176 18.9989 14.4799 19C14.6115 19.0008 14.742 18.9756 14.8638 18.9258C14.9857 18.876 15.0965 18.8027 15.1899 18.71C15.2836 18.6171 15.358 18.5065 15.4088 18.3846C15.4596 18.2627 15.4857 18.132 15.4857 18C15.4857 17.868 15.4596 17.7373 15.4088 17.6154C15.358 17.4936 15.2836 17.383 15.1899 17.29L10.5999 12.71Z"
+              fill="#F8F8F8"
+              fill-opacity="0.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="pagination-middle-container">
+        <button class="pagination-middle-items">1</button>
+        <button class="pagination-middle-items">2</button>
+        <button class="pagination-middle-items">3</button>
+        <button class="pagination-middle-items">...</button>
+      </div>
+      <div class="pagination-right-container">
+        <button class="pagination-right-buttons">
+          <svg
+            class="pagination-right-buttons-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4001 12.7101C13.4939 12.6171 13.5683 12.5065 13.619 12.3846C13.6698 12.2628 13.6959 12.1321 13.6959 12.0001C13.6959 11.8681 13.6698 11.7374 13.619 11.6155C13.5683 11.4936 13.4939 11.383 13.4001 11.2901L8.81014 6.71006C8.71641 6.6171 8.64202 6.5065 8.59125 6.38464C8.54048 6.26278 8.51434 6.13207 8.51434 6.00006C8.51434 5.86805 8.54048 5.73734 8.59125 5.61548C8.64202 5.49362 8.71641 5.38302 8.81014 5.29006C8.9975 5.10381 9.25095 4.99927 9.51514 4.99927C9.77933 4.99927 10.0328 5.10381 10.2201 5.29006L14.8101 9.88007C15.3719 10.4426 15.6875 11.2051 15.6875 12.0001C15.6875 12.7951 15.3719 13.5576 14.8101 14.1201L10.2201 18.7101C10.0339 18.8948 9.78248 18.999 9.52014 19.0001C9.38853 19.0008 9.25807 18.9756 9.13623 18.9258C9.0144 18.8761 8.90358 18.8028 8.81014 18.7101C8.71641 18.6171 8.64202 18.5065 8.59125 18.3847C8.54048 18.2628 8.51434 18.1321 8.51434 18.0001C8.51434 17.8681 8.54048 17.7374 8.59125 17.6155C8.64202 17.4936 8.71641 17.383 8.81014 17.2901L13.4001 12.7101Z"
+              fill="#050505"
+            />
+          </svg>
+        </button>
+        <button class="pagination-right-buttons">
+          <div class="pagination-button-right">
+            <span class="arrow-right-two"></span>
+            <span class="arrow-right-two"></span>
+          </div>
+        </button>
+      </div>
+    </nav>
   </div>
-</footer>
+</section>
+˝
+
+    <!-- Loader relise -->
+<div class="loader-wrapper">
+  <span class="loader"></span>
+</div>
 
 
   </body>
-</html>
+</html> 
