@@ -1,0 +1,157 @@
+/* choose section */
+
+.main-choose-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #05050580;
+}
+
+.search-input {
+  position: relative;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  border-radius: 15px;
+  padding: 14px;
+  width: 335px;
+  height: 46px;
+  background-color: transparent;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #05050580;
+}
+
+.search-icon {
+  /* position: absolute; */
+}
+
+.row-pos-container {
+  display: flex;
+  gap: 14px;
+}
+
+.time-container,
+.area-container {
+  flex: 1;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 160px;
+  height: 68px;
+}
+
+.time-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #05050580;
+}
+
+/* .select-option {
+    border-radius: 14px;
+    width: 161px;
+    height: 176px;
+    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+    background: #fff;
+  } */
+
+.select-option {
+  display: none;
+}
+
+.addition {
+  display: block;
+}
+
+.area-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 160px;
+  height: 68px;
+}
+
+.area-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #05050580;
+}
+
+.select {
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  border-radius: 15px;
+  padding: 14px 18px;
+  width: 160px;
+  height: 46px;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 1.3; */
+  color: #05050580;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 188px;
+  height: 68px;
+}
+
+.ingredients-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #05050580;
+}
+
+.ingredients-select {
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  border-radius: 15px;
+  padding: 14px 18px;
+  width: 188px;
+  height: 46px;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #05050580;
+}
+
+.reset-filter-container {
+  display: flex;
+  justify-content: right;
+  gap: 4px;
+}
+
+.reset-filter-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #05050580;
+}

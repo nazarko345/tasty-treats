@@ -1,19 +1,66 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+<!-- Header Section  -->
+<header class="header-page">
+  <div class="header-container container">
+    <nav class="header-nav"> 
+      <ul class="header-list">
+        <li class="header-item header-item-active">
+          <a class="header-link-active" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-item">
+          <a class="header-item-link" href="">Favorites</a>
         </li>
       </ul>
-    </nav>
+    </nav> 
+    <a class="header-logo" href="#"
+      ><span class="logo-part">tasty</span>treats.</a
+    >
+    <div class="header-mob-icons-container">
+      <button class="header-mob-busket-btn">
+        <a class="header-mob-busket-link" href="#">
+          <svg class="header-logo-basket" width="24" height="24">
+            <use href="/img/icons.svg#icon-basket"></use>
+          </svg>
+        </a>
+      </button>
+      <button data-menu-open class="header-mob-burger-btn">
+        <a class="header-mob-burger-link">
+          <svg class="header-logo-burgermenu" width="32" height="33">
+            <use href="/img/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </a>
+      </button>
+      <div class="switch-container-universal">
+        <div class="switch-overlay">
+          <div class="switch-small-circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Menu Backdrop Section -->
+  <div data-menu class="overlay">
+    <div class="menu">
+      <button data-menu-close class="menu-close">
+        <svg class="header-mob-close-icon" width="32" height="52">
+          <use href="/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="header-nav-mob">
+        <ul class="header-list-mob">
+          <li class="header-item-mob">
+            <a class="header-item-mob-active-link" href="/home-page.html"
+              >Home</a
+            >
+          </li>
+          <li class="header-item-mob">
+            <a class="header-item-mob-link" href="/index2.html">Favorites</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="switch-container-mob">
+        <div class="switch-overlay">
+          <div class="switch-small-circle"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
